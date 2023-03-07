@@ -1,0 +1,51 @@
+BONDS 
+! 
+!V(bond) = Kb(b - b0)**2 
+! 
+!Kb: kcal/mole/A**2 
+!b0: A 
+! 
+!atom type Kb          b0 
+! 
+PCH  DOT       0.200   12.0000
+PSH  DOT       0.200   12.0000
+GLD  AD1      10.000   13.4000
+AD1  AD2      10.000   13.4000
+
+ANGLES
+!
+!V(angle) = Ktheta(Theta - Theta0)**2
+!
+!V(Urey-Bradley) = Kub(S - S0)**2
+!
+!Ktheta: kcal/mole/rad**2
+!Theta0: degrees
+!Kub: kcal/mole/A**2 (Urey-Bradley)
+!S0: A
+!
+!atom types     Ktheta    Theta0   Kub     S0
+!
+AD1  GLD  AD1    100.0     109.5 
+GLD  AD1  AD2     36.0     160.0 
+
+
+NONBONDED 
+! 
+!V(Lennard-Jones) = Eps,i,j[(Rmin,i,j/ri,j)**12 - 2(Rmin,i,j/ri,j)**6] 
+! 
+!epsilon: kcal/mole, Eps,i,j = sqrt(eps,i * eps,j) 
+!Rmin/2: A, Rmin,i,j = Rmin/2,i + Rmin/2,j 
+! 
+!atom  ignored    epsilon      Rmin/2 
+! 
+PCH    0.000000  -0.100000     6.800000
+PSH    0.000000  -0.100000     6.800000
+DOT    0.000000  -10.00000     6.800000
+CLB    0.000000  -0.100000     7.000000
+NAB    0.000000  -0.100000     7.000000
+GLD    0.000000  -20.00000     9.000000
+AD1    0.000000  -0.100000     6.800000
+AD2    0.000000  -0.100000     6.800000
+
+END
+

@@ -1,0 +1,6 @@
+i = 0, j = 10, error = 0, diameter = 7.76294311928
+i = 2, j = 9, error = 3, diameter = 7.87852679436
+i = 3, j = 8, error = -3, diameter = 7.64561229053
+i = 8, j = 3, error = -3, diameter = 7.64561229053
+i = 9, j = 2, error = 3, diameter = 7.87852679436
+i = 10, j = 0, error = 0, diameter = 7.76294311928

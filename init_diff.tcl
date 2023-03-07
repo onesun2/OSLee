@@ -1,0 +1,2 @@
+package require diffusion_coefficient
+vmd_install_extension diffusion_coefficient diffusion_coefficient::diffusion_coefficient_tk "Analysis/Diffusion Coefficient Tool"
